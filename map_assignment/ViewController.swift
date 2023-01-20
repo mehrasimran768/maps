@@ -69,7 +69,7 @@ class ViewController: UIViewController,CLLocationManagerDelegate{
         
         
         // add polygon
-        // addPolygon()
+        addPolygon()
         
         
     }
@@ -149,6 +149,11 @@ class ViewController: UIViewController,CLLocationManagerDelegate{
         let coordinates = places.map {$0.coordinate}
         let polyline = MKPolyline(coordinates: coordinates, count: coordinates.count)
         map.addOverlay(polyline)
+    }
+    func addPolygon() {
+        let coordinates = places.map {$0.coordinate}
+        let polygon = MKPolygon(coordinates: coordinates, count: coordinates.count)
+        map.addOverlay(polygon)
     }
     //MARK: - double tap func
     func addDoubleTap() {
@@ -276,12 +281,12 @@ extension ViewController: MKMapViewDelegate {
             rendrer.lineDashPattern = [0,1]
             return rendrer
         }
-        //else if overlay is MKPolygon {
-//            let rendrer = MKPolygonRenderer(overlay: overlay)
-//            rendrer.fillColor = UIColor.red.withAlphaComponent(0.6)
-//            rendrer.strokeColor = UIColor.yellow
-//            rendrer.lineWidth = 2
-//            return rendrer}
+        else if overlay is MKPolygon {
+            let rendrer = MKPolygonRenderer(overlay: overlay)
+            rendrer.fillColor = UIColor.red.withAlphaComponent(0.6)
+            rendrer.strokeColor = UIColor.yellow
+            rendrer.lineWidth = 2
+            return rendrer}
         
         return MKOverlayRenderer()
     }
