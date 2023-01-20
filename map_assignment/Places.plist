@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+   Places.plist
+   map_assignment
+
+   Created by simran mehra on 2023-01-13.
+   Copyright (c) 2023 ___ORGANIZATIONNAME___. All rights reserved.
+-->
+<plist version="1.0">
+        <array>
+            <dict>
+                <key>title</key>
+                <string>Toronto</string>
+                <key>description</key>
+                <string>Welcome to Toronto!</string>
+                <key>latitude</key>
+                <real>43.6532</real>
+                <key>longitude</key>
+                <real>-79.3832</real>
+            </dict>
+            <dict>
+                <key>title</key>
+                <string>Montreal</string>
+                <key>description</key>
+                <string>Welcome to Montreal!</string>
+                <key>latitude</key>
+                <real>45.5017</real>
+                <key>longitude</key>
+                <real>-73.5673</real>
+            </dict>
+            <dict>
+                <key>title</key>
+                <string>Quebec City</string>
+                <key>description</key>
+                <string>Welcome to Quebec City!</string>
+                <key>latitude</key>
+                <real>46.8139</real>
+                <key>longitude</key>
+                <real>-71.2080</real>
+            </dict>
+            <dict>
+                <key>title</key>
+                <string>Ottawa</string>
+                <key>description</key>
+                <string>Welcome to Ottawa!</string>
+                <key>latitude</key>
+                <real>45.4215</real>
+                <key>longitude</key>
+                <real>-75.6972</real>
+            </dict>
+        </array>
+    </plist>
